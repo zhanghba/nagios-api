@@ -605,3 +605,25 @@ Technologies, Inc.
 
 ## Copying
 See the `LICENSE` file for licensing information.
+
+#install 
+yum install python-virtualenv libffi-dev python-dev python-pip python-setuptools openssl libssl-dev -y
+wget  http://python-distribute.org/distribute_setup.py
+python distribute_setup.py
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
+yum install openssl openssl-devel
+pip install Flask==0.9
+pip install Jinja2==2.6
+pip install Twiggy==0.4.5
+pip install Werkzeug==0.8.3
+pip install diesel==3.0.24
+pip install dnspython==1.15.0
+pip install greenlet==0.4.0
+pip install http-parser==0.8.1
+pip install pyOpenSSL==0.13
+pip install requests==1.2.0
+cd /opt
+git clone https://github.com/zhanghba/nagios-api.git
+cd nagios-api
+./nagios-api -p 12306 -c /usr/local/nagios/var/rw/nagios.cmd -s /usr/local/nagios/var/status.dat -l /usr/local/nagios/var/nagios.log\
