@@ -626,4 +626,4 @@ pip install requests==1.2.0
 cd /opt
 git clone https://github.com/zhanghba/nagios-api.git
 cd nagios-api
-./nagios-api -p 12306 -c /usr/local/nagios/var/rw/nagios.cmd -s /usr/local/nagios/var/status.dat -l /usr/local/nagios/var/nagios.log\
+./nagios-api -p 12306 -c /usr/local/nagios/var/rw/nagios.cmd -s /usr/local/nagios/var/status.dat -l /usr/local/nagios/var/nagios.log
